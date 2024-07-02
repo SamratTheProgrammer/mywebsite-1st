@@ -116,6 +116,7 @@ input#fn{
     border-radius: 4px;
     padding-left: 15px;
     border: 1px solid #030630;
+    outline: none;
 }
 input#ln{
     background-color: transparent;
@@ -125,6 +126,7 @@ input#ln{
     padding-left: 15px;
     border: 1px solid #030630;
     font-size: 15px;
+    outline: none;
 }
 input#email{
     background-color: transparent;
@@ -135,6 +137,7 @@ input#email{
     border: 1px solid #030630;
     font-size: 15px;
     line-height: 16px;
+    outline: none;
 }
 input#pass{
     background-color: transparent;
@@ -145,6 +148,7 @@ input#pass{
     border: 1px solid #030630;
     font-size: 15px;
     line-height: 16px;
+    outline: none;
 }
 input#dateOfBirth{
     background-color: transparent;
@@ -156,6 +160,7 @@ input#dateOfBirth{
     font-size: larger;
     border: 1px solid #030630;
     color: #030630;
+    outline: none;
 }
 p{
     color: #030630;
@@ -289,4 +294,13 @@ footer{
     bottom: 0;
     width: 100%;
     font-size: larger;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: inherit !important;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px transparent;
 }
