@@ -61,6 +61,18 @@ section{
 .home-img img{
     height: 70vh;
     border-radius: 50%;
+    animation: floatimage 4s ease-in-out infinite;
+}
+@keyframes floatimage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 .home-img2 img{
      display: none;              /*second img */
