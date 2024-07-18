@@ -14,7 +14,7 @@ ScrollReveal().reveal('.heading, .memories-img, .wishes-content', {origin: 'left
 
 
 const typed= new Typed('.multiple-text',{
-    strings:['Barsha','Darling'],
+    strings:['Barsha !','Darling !'],
     typeSpeed:100,
     backSpeed:200,
     backDelay:200,
