@@ -7,7 +7,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.wishes-content h3, .heading2, .home-content', {origin: 'top'});
-ScrollReveal().reveal('.home-img, .wishes-content, .memories-content', {origin: 'bottom'});
+ScrollReveal().reveal('.home-img, .wishes-content,', {origin: 'bottom'});
 ScrollReveal().reveal('.heading, .memories-img, .wishes-content', {origin: 'left'});
 
 //typed
