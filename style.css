@@ -139,6 +139,7 @@ section{
 .memories-content p{
     font-size: 1.6rem;
     line-height: 1.3;
+    font-weight: 600;
 }
 .memories-content h3 span{
     color: var(--heading-text-color);
