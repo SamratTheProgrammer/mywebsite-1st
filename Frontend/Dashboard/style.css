@@ -254,6 +254,7 @@ section{
         display: block;
         cursor: pointer;
         font-size: 6rem;
+        color: var(--text-color);
     }
     #darkMode-icon{
         font-size: 5rem;
