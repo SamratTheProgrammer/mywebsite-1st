@@ -35,11 +35,12 @@ body{
     left: 0;
     width: 100%;
     padding: 2rem 7%;
-    background: transparent;
+    background: var(--bg-color);
     display: flex;
     align-items: center;
     z-index: 100;
     transition: 5s;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .7);
 }
 #menu{
     font-size: 3.8rem;
@@ -51,7 +52,6 @@ body{
     cursor: pointer;
     color: var(--text-color);
 }
-
 .logo{
     font-size: 2.5rem;
     color: var(--text-color);
@@ -69,7 +69,6 @@ body{
 section{
     min-height: 100vh;
     padding: 10rem 7% 2rem;
-    overflow-y: hidden;
 }
 .home{
     display: flex;
@@ -135,12 +134,12 @@ section{
     background: var(--main-color);
     color: var(--white-color);
 }
-.navbar a span{
+span{
     color: #fdfdfd;
 }
 .image{
-        width: 100%;
-        height: 100vh;
+        width: 80%;
+        height: 80vh;
         display: flex;
         justify-content: right;
 }
@@ -177,6 +176,54 @@ section{
 .navbar .hover:hover{
     color: rgba(17, 1, 53, 0.866);
     font-weight: 900;
+}
+.heading{
+    font-size: 4.5rem;
+    text-align: center;
+}
+.courses{
+    min-height: 85vh;
+    padding-bottom: 7rem;
+}
+.courses h2{
+    margin-bottom: 5rem;
+}
+.courses .courses-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.courses-container .courses-box{
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    text-align: center;
+    border-top: .6rem solid var(--main-color);
+    border-bottom: .6rem solid var(--main-color);
+    transition: .5s ease;
+}
+.courses-container .courses-box:hover{
+    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    transform: scale(1.02);
+}
+.courses-box i{
+    font-size: 7rem;
+    color: var(--main-color);
+}
+.courses-box h3{
+    font-size: 2.6rem;
+    transition: .5s ease;
+}
+.courses-box:hover h3{
+    color: var(--main-color);
+}
+.courses-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
 }
 @media(max-width:1050px){
     html{
