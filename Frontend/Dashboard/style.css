@@ -182,7 +182,7 @@ span{
     text-align: center;
 }
 .courses{
-    min-height: 85vh;
+
     padding-bottom: 7rem;
 }
 .courses h2{
@@ -225,6 +225,105 @@ span{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+.contact{
+    margin-top: 10rem;
+}
+.contact h2{
+    margin-bottom: 3rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form.input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    
+}
+.contact form .input-box input{
+    width: 49%;
+}
+.contact form textarea{
+    resize:none
+}
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+    color: var(--white-color);
+}
+.contact form .btn:hover{
+    color: var(--main-color);
+}
+.social-media a{
+    margin: 2.5rem .75rem 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--white-color);
+    border-radius: 50%;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 2rem;
+    color: var(--white-color);
+    margin : 2.5rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+.social-media a:hover{
+    background: var(--white-color);
+    color: var(--main-color);
+}
+/* .para p{
+    font-size: 1.5rem;
+    color: var(--white-color);
+    margin-left: 0;
+} */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap ;
+    padding: 2rem 7%;
+    background: var(--main-color);
+}
+.footer-text p{
+    font-size: 1.6rem;
+    color: var(--white-color);
+}
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--white-color);
+    border-radius: .8rem;
+    border: .2rem solid var(--main-color);
+    outline: .2rem solid transparent;
+    transition: .5s ease;
+}
+.footer-iconTop a:hover{
+    outline-color: var(--white-color);
+}
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: #333;
+}
 @media(max-width:1050px){
     html{
         font-size: 40%;
@@ -243,6 +342,9 @@ span{
         top: 50%;
         overflow: hidden;
         pointer-events: none;
+    }
+    .courses{
+        padding-bottom: 7rem;
     }
     .home-content h3{
         font-size: 3rem;
@@ -267,6 +369,13 @@ span{
     }
     #darkMode-icon{
         font-size: 3.5rem;
+    }
+    .contact{
+        min-height: 70vh;
+    }
+    .courses {
+        min-height: 70vh;
+        padding-bottom: 3rem;
     }
 }
 @media(max-width:798px){
@@ -310,6 +419,9 @@ span{
     .logo{
         font-size: 5rem;
     }
+    .footer{
+        padding: 2rem 3%;
+    }
     .navbar{
         position: absolute;
         top: 100%;
@@ -327,21 +439,23 @@ span{
         display: block;
         font-size: 3rem;
         margin: 3rem 0;
-        
+    }
+    .navbar{
+        background-color: var(--white-color);
     }
     a.btn2{
         font-size: 11.04px;
+        padding-left: -20%;
     }
     .btn2{
         width: 70.68px;
         height: 26.5px;
-        
     }
     .header{
         padding-top: 5%;
     }
 }
-@media(max-width:425px){
+@media(max-width:450px){
     .search{
         width: 80vw;
         height: 10vh;
@@ -357,6 +471,10 @@ span{
     .home-content h1{
         font-size: 6rem;
     }
+    .contact form .input-box input{
+        width: 100%;
+    }
+    
 }
 @media(max-width:376px){
     html{
@@ -365,4 +483,35 @@ span{
     .search{
         width: 80vw;
     }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-content h3{
+        font-size:3rem;
+    }
+    
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: inherit !important;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px transparent;
+}
+input:autofill{
+    filter: none;
+    color: #ffffff !important; 
+    background-color: #1f1f3a !important;
+}
+input:-ms-input-placeholder {
+    color: #ffffff !important;
 }
